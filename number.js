@@ -1,5 +1,5 @@
 class Segments {
-  constructor(x = 0, y = 0, number = 'null') {
+  constructor(x = 0, y = 0, number = "null") {
     // Top
     new HorizontalLine(
       x + 40,
@@ -64,9 +64,9 @@ class Segments {
 class HorizontalLine {
   constructor(x, y, sx, sy, lighton) {
     if (lighton) {
-      stroke('red')
+      stroke("red")
     } else {
-      stroke('#490000')
+      stroke("#490000")
     }
     strokeWeight(20)
     line(x, y, sx, sy)
@@ -76,11 +76,25 @@ class HorizontalLine {
 class VerticalLine {
   constructor(x, y, sx, sy, lighton) {
     if (lighton) {
-      stroke('red')
+      stroke("red")
     } else {
-      stroke('#490000')
+      stroke("#490000")
     }
     strokeWeight(20)
     line(x, y, sx, sy)
+  }
+}
+
+class DecimalPoint {
+  constructor(x, y, lighton) {
+    if (lighton) {
+      stroke("red")
+      fill("red")
+    } else {
+      stroke("#490000")
+      fill("#490000")
+    }
+    strokeWeight(1)
+    circle(x, y, 10)
   }
 }

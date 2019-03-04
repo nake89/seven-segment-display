@@ -16,4 +16,5 @@ function draw() {
   new Segments(140, 300, 8)
   new Segments(280, 300, 9)
   new Segments(420, 300)
+  new DecimalPoint(570, 545, true)
 }
